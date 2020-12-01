@@ -7,9 +7,6 @@ class main{
 	constructor(maindata,centers,predata){
 		this.data=maindata
 		this.mapcolordata={}
-		console.log("Hello");
-		//d3.json('data/0_20081023025304.json').then(d=> console.log(1,d))
-		console.log(this.mapcolordata)
 		this.fix()
 		this.colors= [
 			"#63b598", "#ce7d78", "#ea9e70", "#a48a9e", "#c6e1e8", "#648177" ,"#0d5ac1" ,
@@ -221,7 +218,6 @@ class main{
 		function load(address){
 			d3.json('./data/'+address+'.json').then(d=>{
 				L.polyline(d[address], {className:address,color: that.colorscale(+address.split('_')[0])}).addTo(that.map)})
-		console.log(d);
 		}
 	}
 	clearmap(){
