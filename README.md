@@ -1,8 +1,5 @@
 @Hasan Pourmahmoodaghababa
 
-@Note that you will need to download the dataset 
-https://drive.google.com/file/d/1qKLmQyXX4s-mEJyF8LGXYEqqE1RaWXwk/view?usp=sharing 
-in order to it works.
 
 Firstly, I have created appropriate data and data structure (linked list) for route extraction task which is efficient in terms of run time. Then I created a class that has a predictTraj() function that receives a trajectory gamma (in an array form) and gives the address of closest trajectories among ~18000 trajectories to gamma up to a certain threshold (which I have set to 1). 
 
