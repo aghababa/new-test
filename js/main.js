@@ -7,7 +7,7 @@ class main{
 	constructor(maindata,centers,predata){
 		this.data=maindata
 		this.mapcolordata={}
-		
+		d3.json('data/0_20081023025304.json').then(d=> console.log(d))
 		console.log(this.mapcolordata)
 		this.fix()
 		this.colors= [
