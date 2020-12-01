@@ -220,6 +220,7 @@ class main{
 		function load(address){
 			d3.json('data/'+address+'.json').then(d=>{
 				L.polyline(d[address], {className:address,color: that.colorscale(+address.split('_')[0])}).addTo(that.map)})
+		console.log(d);
 		}
 	}
 	clearmap(){
