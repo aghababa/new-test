@@ -36,14 +36,10 @@ class Computation {
 	constructor(maindata,centers,predata){
 		this.convertion=new FeatureMap()
 		this.maindata=maindata
-		console.log(maindata)
-		console.log(centers)
-		console.log(predata)
 		this.centers=[]
 		for (let i=0;i<1000;i++){
 			this.centers.push([giveId(centers[i]),giveVect(centers[i])])
 		}
-		console.log(predata)
 		this.centers_ll=[]
 		for (let i=0;i<1000;i++){
 		 	var ll=new LinkedList()
@@ -137,7 +133,6 @@ class Computation {
 			trajaddress.push(gelement.element[0])
 			gelement=gelement.next
 		}
-		console.log(trajaddress)
 		return trajaddress
 	}
 	selectOneOfCenters(enteredVector){
