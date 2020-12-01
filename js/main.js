@@ -90,7 +90,6 @@ class main{
 	}
 	cMap(lat,lng){
 		this.latlngs.push([lat,lng]);
-		console.log(this.latlngs)
 			L.circle([lat, lng], {
 				    color: 'red',
 				    fillColor: '#f03',
@@ -143,7 +142,6 @@ class main{
 	  		})
 	  		.on('mouseover',function(d,i){
 	  			if(status.status!==1){
-	  				console.log(status.status)
 	  				d3.select(this).style("stroke-width","4px");
 					call([i['User Name']+'_'+i['Trajectory Name']])
 	  			}
@@ -188,7 +186,6 @@ class main{
 			})
 			.on('mouseover',function(d,i){
 	  			if(status.status!==1){
-	  				console.log(status.status)
 	  				d3.select(this).style("stroke-width","4px");
 					call([i['User Name']+'_'+i['Trajectory Name']])
 	  			}
@@ -205,7 +202,6 @@ class main{
 			let plt=+row['Trajectory Name']
 			this.mapcolordata[row['User Name']+'_'+ plt.toString()] =+row['k:'+k]
 		})
-		console.log(this.mapcolordata)
 		drawcent(draw(that.data))
 		
 
